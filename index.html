@@ -493,15 +493,19 @@
           </symbol>
         </svg>
         <div class="footer-subscribe">
-          <p class="subscribe-p">Subscribe</p>
-          <form name="subscribe-form" autocomplete="off" novalidate>
-            <input
-              class="subscribe-input"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-              required
-            />
+          <!-- <p class="subscribe-p">Subscribe</p> -->
+          <form name="subscribe-form" autocomplete="off">
+            <label class="label-input">
+              Subscribe
+              <input
+                class="subscribe-input"
+                id="mail-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                required
+              />
+            </label>
             <button class="button-subscribe" type="submit">
               Subscribe<svg class="footer-subscribe-svg" width="24" height="20">
                 <use href="#icon-send"></use>
@@ -511,5 +515,8 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal"></div>
+    </div>
   </body>
 </html>
