@@ -419,7 +419,7 @@ img {
 }
 
 /* =========/Style-main-portfolio========= */
-/* =========Style-footer========= */
+/* =========Style-footer================== */
 .end {
   background-color: #2e2f42;
   width: 1440px;
@@ -467,6 +467,9 @@ img {
   align-items: baseline;
 }
 
+.footer-social-div {
+  margin-right: 80px;
+}
 .footer-social-ul {
   display: flex;
   gap: 16px;
@@ -489,4 +492,48 @@ img {
 
 .footer-social-svg {
   fill: #f4f4fd;
+}
+
+/*Subscribe-------------------*/
+.footer-subscribe {
+  margin: 0;
+  gap: 0;
+}
+.subscribe-p {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.subscribe-form {
+}
+.subscribe-input {
+  margin-right: 24px;
+  width: 263px;
+  height: 40px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+input::placeholder {
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  padding: 8px 16px;
+  letter-spacing: 0.04em;
+}
+.button-subscribe {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  margin: 0;
 }
