@@ -256,9 +256,9 @@ img {
 /* =========Style-main-team========= */
 .teambackground {
   background-color: #f4f4fd;
-  max-width: 1440px;
+  /* max-width: 1440px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
   padding-bottom: 120px;
   padding-top: 120px;
 }
@@ -422,9 +422,9 @@ img {
 /* =========Style-footer================== */
 .end {
   background-color: #2e2f42;
-  width: 1440px;
+  /* width: 1440px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
   padding-bottom: 100px;
   padding-top: 100px;
 }
@@ -463,7 +463,6 @@ img {
 }
 .container.footer {
   display: flex;
-
   align-items: baseline;
 }
 
