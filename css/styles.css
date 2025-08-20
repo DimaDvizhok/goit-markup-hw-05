@@ -50,8 +50,8 @@ img {
 /* =========Style-header-menu========= */
 .page-header {
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .heder-menu {
   display: flex;
@@ -155,7 +155,10 @@ img {
   margin-right: auto;
   padding-bottom: 188px;
   padding-top: 188px;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
     url(../images/people-office.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -270,8 +273,8 @@ img {
 .team-color-back {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16),
-    0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-social-li:hover,
@@ -410,8 +413,8 @@ img {
 }
 
 .portfolio-list-li:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list-li:hover .portfolio-overlay-p {
@@ -518,21 +521,24 @@ img {
   background-color: transparent;
   border: 1px solid #ffffff;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  padding: 8px 16px;
 }
 input::placeholder {
   color: #fff;
-  font-weight: 400;
-  font-size: 12px;
-  padding: 8px 16px;
-  letter-spacing: 0.04em;
 }
+
 .button-subscribe {
+  display: inline-flex;
+  align-items: center;
   border: none;
+  gap: 16px;
   border-radius: 4px;
   padding: 8px 24px;
   width: 165px;
   height: 40px;
   background-color: #4d5ae5;
   color: #ffffff;
-  margin: 0;
+}
+.footer-subscribe-svg {
+  fill: #ffffff;
 }
