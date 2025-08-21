@@ -485,13 +485,7 @@
             </li>
           </ul>
         </div>
-        <svg style="display: none">
-          <symbol id="icon-send" viewBox="0 0 38 32">
-            <path
-              d="M38.4 0l-38.4 18 12.272 3.788 18.928-14.788-14.397 16.186 0.012 0.004-0.014-0.004v8.814l6.882-6.691 8.718 2.691 6-28z"
-            ></path>
-          </symbol>
-        </svg>
+
         <div class="footer-subscribe">
           <!-- <p class="subscribe-p">Subscribe</p> -->
           <form name="subscribe-form" autocomplete="off">
@@ -507,8 +501,14 @@
               />
             </label>
             <button class="button-subscribe" type="submit">
-              Subscribe<svg class="footer-subscribe-svg" width="24" height="20">
-                <use href="#icon-send"></use>
+              Subscribe
+              <svg
+                class="footer-subscribe-svg"
+                width="24"
+                height="20"
+                aria-label="send icon"
+              >
+                <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
             </button>
           </form>
@@ -516,7 +516,13 @@
       </div>
     </footer>
     <div class="backdrop">
-      <div class="modal"></div>
+      <div class="modal">
+        <button class="modal-btn" type="button">
+          <svg class="close-icon" width="8" height="8" aria-label="close icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </body>
 </html>
