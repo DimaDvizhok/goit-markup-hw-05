@@ -515,7 +515,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-btn" type="button">
           <svg class="close-icon" width="8" height="8" aria-label="close icon">
@@ -527,29 +527,82 @@
         </p>
         <form class="modal-form">
           <div class="modal-form-div">
-            <label class="modal-form-label" for=""></label>
-            <input class="modal-form-input" type="text" id="" />
+            <label class="modal-form-label" for="user-name">Name</label>
+            <div class="reletiv-div">
+              <input
+                class="modal-form-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ']+"
+                required
+                title="Дмитро"
+              />
+              <svg class="svg-absolute" width="12" height="12">
+                <use href="./images/icons.svg#icon-user-avatar"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="modal-form-div">
-            <label class="modal-form-label" for=""></label>
-            <input class="modal-form-input" type="text" id="" />
+            <label class="modal-form-label" for="phone-number">Phone</label>
+            <div class="reletiv-div">
+              <input
+                class="modal-form-input"
+                type="tel"
+                name="phone-number"
+                id="phone-number"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                required
+              />
+              <svg class="svg-absolute" width="13" height="13">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="modal-form-div">
-            <label class="modal-form-label" for=""></label>
-            <input class="modal-form-input" type="text" id="" />
+            <label class="modal-form-label" for="user-mail">Email</label>
+            <div class="reletiv-div">
+              <input
+                class="modal-form-input"
+                type="email"
+                name="user-mail"
+                id="user-mail"
+                required
+              />
+              <svg class="svg-absolute" width="15" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="modal-form-div">
-            <label class="modal-form-label" for=""></label>
+            <label class="modal-form-label" for="user-coment">Comment</label>
             <textarea
               class="modal-form-textarea"
               type="text"
-              name=""
-              id=""
+              name="user-coment"
+              id="user-coment"
+              placeholder="Text input"
             ></textarea>
           </div>
+          <div class="modal-form-div-checkbox">
+            <input
+              class="modal-form-checkbox"
+              type="checkbox"
+              name="privacy-check"
+              id="privacy-check"
+              value="true"
+              required
+            />
+            <label class="modal-form-label-checkbox" for="privacy-check"
+              >I accept the terms and conditions of the
+              <a href="">Privacy Policy</a></label
+            >
+          </div>
+          <button class="modal-privacy-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
