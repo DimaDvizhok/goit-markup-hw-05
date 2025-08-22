@@ -543,10 +543,15 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-subscribe-svg {
   fill: #ffffff;
   margin-left: 16px;
+}
+.button-subscribe:hover,
+.button-subscribe:focus {
+  background-color: #404bbf;
 }
 
 /*Backdrop--------------------*/
@@ -654,7 +659,7 @@ img {
 }
 .svg-absolute {
   position: absolute;
-  left: 19px;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -712,11 +717,15 @@ img {
   cursor: pointer;
   fill: transparent;
   margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-checkbox:checked + .modal-form-label-checkbox .checkbox-span {
   background-color: #404bbf;
   fill: #f4f4fd;
   border-color: #404bbf;
+  border: none;
 }
 .modal-form-checkbox:focus + .modal-form-label-checkbox .checkbox-span {
   outline: 2px solid #404bbf;
@@ -725,8 +734,9 @@ img {
   display: block;
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
+  border: none;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
   font-weight: 500;
@@ -737,4 +747,9 @@ img {
   color: #ffffff;
   margin-right: auto;
   margin-left: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-privacy-btn:hover,
+.modal-privacy-btn:focus {
+  background-color: #404bbf;
 }
