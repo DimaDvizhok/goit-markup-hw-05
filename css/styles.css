@@ -725,5 +725,5 @@ input::placeholder {
   text-align: center;
   color: #ffffff;
   margin-right: auto;
-  margin-left: auto;
+  /* margin-left: auto; */
 }
