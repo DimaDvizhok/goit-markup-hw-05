@@ -497,28 +497,17 @@ img {
 }
 
 /*Subscribe-------------------*/
-.footer-subscribe {
-  margin: 0;
-  gap: 0;
-}
-/* .subscribe-p {
-  margin-bottom: 16px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-} */
 
 .label-input {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  display: block;
+  /* flex-direction: column; */
+
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-bottom: 16px;
 }
 .subscribe-input {
   width: 263px;
@@ -529,6 +518,7 @@ img {
   border: 1px solid #ffffff;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   padding: 8px 16px;
+  margin-right: 24px;
 }
 input::placeholder {
   color: #fff;
