@@ -511,9 +511,7 @@ img {
   display: flex;
   gap: 24px;
 }
-.subscribe-label {
-  display: none;
-}
+
 .subscribe-input {
   width: 264px;
   height: 40px;
